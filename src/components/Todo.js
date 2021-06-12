@@ -28,7 +28,7 @@ export default class Todo extends Component {
 
     deleteTask=(id)=>{
          let nta = this.state.tasks.filter(task =>{
-           return task.id!=id
+           return task.id!==id
          })
          this.setState({
              tasks:nta,
